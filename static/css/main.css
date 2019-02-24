@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+code {
+    font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+::-moz-selection {
+    background-color: #ffd900
+}
+
+::selection {
+    background-color: #ffd900
+}
+
+main {
+    background-color: #252f63;
+    display: flex;
+    align-items: center;
+    min-height: 100vh
+}
+
+.main-area {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 2rem
+}
+
+html {
+    font: 112.5%/1.45 Lora,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    box-sizing: border-box;
+    overflow-y: scroll
+}
+
+body {
+    color: rgba(0,0,0,.8);
+    font-family: Lora,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-weight: 400;
+    word-wrap: break-word;
+    -webkit-font-kerning: normal;
+    font-kerning: normal;
+    -ms-font-feature-settings: "kern","liga","clig","calt";
+    -webkit-font-feature-settings: "kern","liga","clig","calt";
+    font-feature-settings: "kern","liga","clig","calt","kern"
+}
+
+h1 {
+    font-family: Lora,serif;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    font-size: 3.157rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+	color:#fff;
+}
+h1 + p {
+	font-size:22px;
+}
+p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+	color:#ffe985;
+	font-family: "Oswald",san-serif;
+}
+
+.social {
+    padding: 0;
+    margin: 0
+}
+
+.social li {
+    list-style: none;
+    display: inline-block
+}
+
+.social li:not(:first-child) {
+    margin-left: 2.5rem
+}
+
+a {
+    font-style: normal;
+    color: #E77470;
+    font-size: 1.333rem;
+    font-weight: 600;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-family: Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    padding: 3px;
+    outline: 2px solid transparent;
+    text-decoration: none;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease
+}
+
+a:focus {
+    outline: 5px solid #ffd900
+}
+.Avatar-frame:before {
+    content: '';
+    position: absolute;
+    height: 104%;
+    width: 104%;
+    background-color: #fff;
+    z-index: -99999;
+    transform: rotate(-5deg);
+    transform-origin: center;
+    top: -7px;
+    left: -2px;
+    bottom: 0;
+}
+.Avatar-frame img::-moz-selection {
+    background-color: initial
+}
+
+.Avatar-frame img::selection {
+    background-color: initial
+}
+
+.Avatar-frame {
+    width: 132px;
+    height: 160px;
+    display: block;
+    z-index: 1111;
+    margin: 0 auto 15px;
+    transform: rotate;
+    -webkit-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+    -webkit-transition: 100ms all ease;
+    -o-transition: 100ms all ease;
+    transition: 100ms all ease;
+}
+.paint {
+    position: absolute;
+    top: -80px;
+    left: -100px;
+    height: 230%;
+    width: 230%;
+    z-index: -999999;
+}
+.Avatar {
+    max-width: 100%
+}
+
+.animationScreen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0
+}
+
+@media screen and (max-width: 630px) {
+    html {
+        font-size:75%;
+        text-align: center
+    }
+	.paint {
+		top: -60px;
+		left: -60px;
+		height: 150%;
+		width: 180%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size:65%
+    }
+}
